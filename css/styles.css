@@ -1,0 +1,355 @@
+:root {
+  --dark-color: #2e2f42;
+  --text-color: #434455;
+  --primary-brand-color: #4d5ae5;
+  --background-color: #ffffff;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --pressed-state-color: #404bbf;
+  --column-gap: 24px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  color: var(--dark-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/*---------- HEADER------------ */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header > .container {
+  display: flex;
+}
+
+.header-logo {
+  margin-right: 76px;
+
+  color: var(--dark-color);
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-logo .web {
+  color: var(--primary-brand-color);
+}
+
+.site-nav {
+  display: flex;
+  margin-right: auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.link {
+  color: var(--dark-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--text-color);
+}
+.link:focus {
+  color: var(--primary-brand-color);
+}
+
+.header-mail {
+  color: var(--dark-color);
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--primary-brand-color);
+}
+
+.header-tel {
+  color: var(--dark-color);
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--primary-brand-color);
+}
+
+/*---------- HERO------------ */
+
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background: var(--dark-color);
+  text-align: center;
+}
+
+.hero-title {
+  margin: 0 auto 48px;
+  max-width: 500px;
+
+  color: var(--background-color);
+
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.hero-btn {
+  display: inline-block;
+  min-width: 169px;
+  height: 56px;
+
+  color: var(--background-color);
+  background: var(--primary-brand-color);
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--pressed-state-color);
+}
+
+/* ----------SECTIONS---------------- */
+
+.section-list {
+  display: flex;
+}
+
+.section-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.section-list .title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.section-list .text {
+  color: var(--text-color);
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.section-list {
+  list-style: none;
+}
+
+/* -------------PRINCIPLES--------- */
+
+.principles .section-list {
+  gap: var(--column-gap);
+}
+
+.principles-list-item {
+  flex-basis: calc((100% - 3 * var(--column-gap)) / 4);
+}
+
+.principles {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* -------------EXAMPLES----------- */
+
+.examples {
+  padding-bottom: 120px;
+}
+
+.examples .section-list {
+  gap: var(--column-gap);
+}
+
+.examples-list-item {
+  flex-basis: calc((100% - 2 * var(--column-gap)) / 3);
+}
+
+/* -------------TEAM--------------- */
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--light-color);
+  text-align: center;
+}
+
+.team .section-list {
+  gap: var(--column-gap);
+}
+
+.team-list-item {
+  flex-basis: calc((100% - 3 * VAR(--column-gap)) / 4);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* ------------FOOTER------------- */
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: var(--dark-color);
+}
+
+.footer-logo {
+  color: var(--light-color);
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-logo .web {
+  color: var(--primary-brand-color);
+}
+
+.footer-text {
+  margin-top: 16px;
+  max-width: 264px;
+
+  color: var(--accent-color);
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* -------PORTFOLIO--------- */
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.container.buttons {
+  margin-bottom: 72px;
+}
+
+.section-list.buttons {
+  gap: 24px;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+
+  color: var(--primary-brand-color);
+  background-color: var(--light-color);
+
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--background-color);
+  background-color: var(--primary-brand-color);
+}
+
+.section-list.card-set {
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.card-item {
+  flex-basis: calc((100% - 2 * var(--column-gap)) / 3);
+  border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.card-content {
+  padding: 32px 0 32px 16px;
+}
